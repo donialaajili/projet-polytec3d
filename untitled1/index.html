@@ -1,29 +1,41 @@
-<!DOCTYPE HTML>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r95/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.16/vanta.waves.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html>
-	<head>
-		<title>Mes Projets</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--<link rel="stylesheet" href="book.css" />-->
-		<link rel="stylesheet" href="css/style.css">
-		<link
-				rel="stylesheet"
-				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-				integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-				crossorigin="anonymous"
-				referrerpolicy="no-referrer"
-		/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/noscript.css">
-    <!--<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>-->
-	</head>
-	<body class="is-preload">
-	<header>
+  <!--========== BOX ICONS ==========-->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="test1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="aos.css">
+  <title>Responsive website polytec3D</title>
+
+</head>
+<body>
+<!--<script src="loading%20page.js"></script>
+<div id="loading-animation">--->
+  <!-- Ajoutez ici votre animation de chargement ---->
+
+
+<!--========== SCROLL TOP ==========-->
+<a href="#" class="scrolltop" id="scroll-top">
+  <i class='bx bx-chevron-up scrolltop__icon'></i>
+</a>
+
+<!--========== HEADER ==========-->
+
+<header>
 	<nav>
 		<div class="wrapper">
 			<div class="logo">
@@ -37,9 +49,9 @@
 				<label for="cancel_btn" class="btn cancel_btn">
 					<i class="fas fa-times"></i>
 				</label>
-				<li><a href="test1.html">Home</a></li>
-				<li><a href="index.html">Mes Projets</a></li>
-				<li><a href="test1.html">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projet.html">Mes Projets</a></li>
+				<li><a href="#contact">Contact</a></li>
 				<li>
 
 					<input type="checkbox" id="showMega" />
@@ -64,268 +76,257 @@
 		</div>
 	</nav>
 	</header>
-
-		<!-- Sidebar
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>-->
-
-		<!-- Wrapper -->
-
-			<div id="wrapper">
-
-				<!-- Intro -->
-
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-					<!--
-						<div class="container">
-							<ul class="align">
-								<li>
-									<figure class='book'>
+<!--=============================body==========================-->
 
 
 
-										<ul class='hardcover_front'>
-											<li>
-												<h9 class="titre">PORTFOLIO</h9>
-												<h2 class="heading">polytech3d <br>Rodolphe Malichecq </h2>
-												<p class="sub-title">Animation, Modelisation, illustration</p>
-												<img src="images/Blender_logo_no_text.svg.png" alt="" width="50px" height="50px">
-												<i>Ecrit par</i> Rodolphe Malichecq
-												<p class="copyright">&copy;&nbsp; Copyright 2023</p>
+<section id="accueil" class="accueil">
+  <div class="container">
+    <div class="background-img">
+      <div class="box">
+      <div class="container">
 
-											</li>
-											<li></li>
-										</ul>
+  <video id="background-video" autoplay loop muted>
 
+    <source src="ENTER-WEBSITE_1%20(online-video-cutter.com).mp4" type="video/mp4">
 
-										<ul class='page'>
-											<li></li>
-											<li>
-												<p>1. Conception 3D
+  </video>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-												</p>
-												<p>2. Architecture perspective </p>
-
-												<p>3. Animation 3D</p>
-
-												<p>4. Illustration</p>
-                        <a href="https://linktr.ee/polytec3d" class="button scrolly">Learn more</a>
+<!--================================================section presentation=========================================-->
+<section class="home show-animate" id="home">
 
 
-											</li>
+  <div class="home_content">
+    <!-- <h1>bonjour, nous sommes <SPAN>polytech3D</SPAN> </h1>-->
 
-											<li></li>
-											<li></li>
-											<li></li>
-										</ul>
-
-
-										<ul class='hardcover_back'>
-											<li></li>
-											<li></li>
-										</ul>
-										<ul class='book_spine'>
-											<li></li>
-											<li></li>
-										</ul>
-									</figure>
-								</li>
-							</ul>
-						</div> <br>
-						<div class="inner">
-							<h1>Mes Projets</h1>
-							<p>voici quelques exemple de ce que j'ai pu realisées </p>
-              <a href="https://linktr.ee/polytec3d" class="button scrolly">Learn more</a>
+    <div class="animation-text" >
+      <div class="container"  style="padding-top: 20%;" >
+        <h3>Je design et modelise vos envies, vos projets, vos idées...</h3>
 
 
-						</div>-->
-            <div class="inner">
-              <svg width="100%" height="100%">
-                <defs>
-                  <pattern id="polka-dots" x="0" y="0"                    width="100" height="100"
-                           patternUnits="userSpaceOnUse">
-                    <circle fill="#08490b" cx="25" cy="25" r="3"></circle>
-                  </pattern>
-                  <style>
-                    @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
-                  </style>
+        <p> Specialiste dans la prestation de service en infographie 3D : modelisation 3D, illustration 3D, et animation en image de synthese
+          designer et infographiste 3D, notre domaine d'expertise concerne les secteurs de la communication , de l'architecture,de l'ingenieurie et de jeu video</p>
+        <div class="home-imghover"></div>
+        <div class="button-box" data-aos="fade-right" data-aos-delay="200">
+          <a href="#contact" class="btn" style="text-decoration: none">Faire un devis</a>
+          <a href="#about" class="btn" style="text-decoration: none">A propos</a>
 
-                </defs>
+        </div>
+        <img src="3d-removebg-preview.png" class="image-fond">
+      </div> </div>
+  </div>
 
-                <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
-                <text x="60%" y="60%"  text-anchor="middle"  >
-                  Mes projets
-                </text><br>
-                <p>voici quelques exemple de ce que j'ai pu realisées </p><br>
-                <a href="https://linktr.ee/polytec3d" class="button scrolly">Learn more</a>
-              </svg>
+</section>
+<section class="about" id="about">
+  <h2 class="heading"><span></span><span class="animate" style="--i:1;"></span></h2>
+  <div class="about-img" data-aos="zoom-in" data-aos-delay="200">
+    <img src="Logo_rond%202.png" alt="">
+    <span class="circle"></span>
 
+  </div>
+  <div class="about-content" data-aos="zoom-in" data-aos-delay="200">
+    <h3>Rodolphe Malichecq </h3>
+    <p> Je me nomme Rodolphe Malichecq,<br>
 
-            </div>
+      Je suis un concepteur 3D passionné, Je mets mes connaissances et mon inspiration au services de mes clients.</p>
+      <p>Mon parcours professionnel et ma passion pour le design m'ont façonné en un créatif engagé dans le monde de la création visuelle,
+        M'incitant à explorer des domaines connexes tels que la modélisation 3D, l'animation, la réalité virtuelle, pour enrichir mon bagage de compétences et élever mes créations au niveau suivant.</p>
 
-          </section>
-      <script>
-        const effect = VANTA.WAVES({
-          el: "#intro",
-          mouseControls: true,
-          touchControls: true,
-          minHeight: 400.0,
-          minWidth: 400.0,
-          scale: 1.0,
-          scaleMobile: 1.0,
-          waveHeight: 20.0,
-          color: 0x000001,
-          waveSpeed: 0.5,
-        });
-        //horizon scrollbar fix... sort of.
-        window.onload = function () {
-          window.dispatchEvent(new Event("resize"));
-        };
-      </script>
+      <p>Mon objectif est de créer des expériences visuelles qui captivent, inspirent et réinventent notre perception du monde.</p>
 
+      <p>Si vous partagez cette passion pour la conception, la créativité et le design, je serais ravi de collaborer avec vous pour donner vie à vos projets.
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<!--<script src="assets/js/jquery.scrollex.min.js"></script>-->
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-		  <script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-				<section class="px-slider-section">
-					<div class="px-pages">
-						<div class="px-page px-page-1 active">
-							<div class="half half--left">
-								<div class="skewed">
-									<div class="content">
-										<iframe title="Brescia Italia 1825 (percussion pistol) H-P" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/94603bb8004d44f1a0b93f7c2f39c954/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/brescia-italia-1825-percussion-pistol-h-p-94603bb8004d44f1a0b93f7c2f39c954?utm_medium=embed&utm_campaign=share-popup&utm_content=94603bb8004d44f1a0b93f7c2f39c954" target="_blank" rel="nofollow" style="font-weight: bold; color: rgba(104,106,117,0.75);"> Brescia Italia 1825 (percussion pistol) H-P </a> by <a href="https://sketchfab.com/POLYTEC3D?utm_medium=embed&utm_campaign=share-popup&utm_content=94603bb8004d44f1a0b93f7c2f39c954" target="_blank" rel="nofollow" style="font-weight: bold; color: rgba(104,106,117,0.75);"> POLYTEC3D </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=94603bb8004d44f1a0b93f7c2f39c954" target="_blank" rel="nofollow" style="font-weight: bold; color: rgba(104,106,117,0.75);">Sketchfab</a></p>
-										<iframe title="LEGO HELICOPTER" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/aaaa45bb257e4a5e81edef632fe782fb/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/lego-helicopter-aaaa45bb257e4a5e81edef632fe782fb?utm_medium=embed&utm_campaign=share-popup&utm_content=aaaa45bb257e4a5e81edef632fe782fb" target="_blank" rel="nofollow" style="font-weight: bold; color: rgba(104,106,117,0.75);"> LEGO HELICOPTER </a> by <a href="https://sketchfab.com/POLYTEC3D?utm_medium=embed&utm_campaign=share-popup&utm_content=aaaa45bb257e4a5e81edef632fe782fb" target="_blank" rel="nofollow" style="font-weight: bold; color: rgba(104,106,117,0.75);"> POLYTEC3D </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=aaaa45bb257e4a5e81edef632fe782fb" target="_blank" rel="nofollow" style="font-weight: bold; color: rgba(104,106,117,0.75);">Sketchfab</a></p>
-										<iframe title="Système de pompe à chaleur / Heat pump" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/5f73941296bc42d896aa19291614e05d/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/systeme-de-pompe-a-chaleur-heat-pump-5f73941296bc42d896aa19291614e05d?utm_medium=embed&utm_campaign=share-popup&utm_content=5f73941296bc42d896aa19291614e05d" target="_blank" rel="nofollow" style="font-weight: bold; color: rgba(104,106,117,0.75);"> Système de pompe à chaleur / Heat pump </a> by <a href="https://sketchfab.com/POLYTEC3D?utm_medium=embed&utm_campaign=share-popup&utm_content=5f73941296bc42d896aa19291614e05d" target="_blank" rel="nofollow" style="font-weight: bold; color: rgba(104,106,117,0.75);"> POLYTEC3D </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=5f73941296bc42d896aa19291614e05d" target="_blank" rel="nofollow" style="font-weight: bold; color: rgba(104,106,117,0.75);">Sketchfab</a></p> </div>
-
-								</div>
-							</div>
-							<div class="half half--right">
-								<div class="skewed">
-									<div class="content" data-bg-color="#252629">
-										<h2 class="heading">conception 3D</h2>
-										<hr />
-										<!--<p class="description">Avec Blender...</p>-->
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="px-page px-page-2">
-							<div class="half half--left">
-								<div class="skewed">
-									<div class="content" data-bg-color="#252629">
-										<h2 class="heading">Architecture Perspective</h2>
-										<hr />
-										<!--<p class="description">Avec Adobe..!</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="half half--right">
-								<div class="skewed">
-									<div class="content">
-										<video id="background-video" autoplay loop muted>
-
-											<source src="Concrete%20Home%20FR%20mp4%202.mp4" type="video/mp4">
-
-										</video>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="px-page px-page-3">
-							<div class="half half--left">
-								<div class="skewed">
-									<div class="content" data-bg-image="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbbd27149a8243a42eb2bd0bd918ba8f&auto=format&fit=crop&w=1050&q=80"></div>
-								</div>
-							</div>
-							<div class="half half--right">
-								<div class="skewed">
-									<div class="content" data-bg-color="#252629">
-										<h2 class="heading">Animation 3D</h2>
-										<hr />
-										<!--<p class="description">Avec Blender!</p>-->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="px-page px-page-4">
-							<div class="half half--left">
-								<div class="skewed">
-									<div class="content">
-										<img src="polytec3d-cyberwoman.jpg" height="200px">
-										<img src="travaux%20nuances%20de%20gris.png" height="200px">
-										<img src="polytec3d-malichecq-rod-expression-color.jpg" height="200px" >
-										<img src="polytec3d-malichecq-rod-line-up-color.jpg" height="200px">
-										<img src="polytec3d-malichecq-rod-turn-around%20(1).jpg" height="200px">
-
-									</div>
-								</div>
-							</div>
-							<div class="half half--right">
-								<div class="skewed">
-									<div class="content" data-bg-color="#252629">
-										<h2 class="heading">illustration</h2>
-										<hr />
-										<!--<p class="description">Avec Adobe...</p>-->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
-				<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js'></script>
-				<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-				<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
-				<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js'></script>
+    </p>
+  </div>
 
 
 
-				<script  src="js/index.js"></script><br>
 
-        <footer class="footer">
-          <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
+  </div>
+
+  </div>
+<!--======================================================section slide===============================================-->
+</section>
+
+<section class="slide">
+  <div class="diapo" data-speed="2000" data-transition="700">
+    <div class="elements">
+      <div class="element">
+        <img src="yohan-roy-render-1024x576.jpg" alt="Annimation 3D" width="700" height="700">
+        <div class="caption">
+          <h2>Animation 3D</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+        </div>
+      </div>
+      <div class="element" >
+        <img src="6cd160ae-91cb-4a80-ba32-cf5152c387a5_rw_1920.png" alt="Modelisation 3D" width="700" height="700">
+        <div class="caption">
+          <h2>Modelisation 3D</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+        </div>
+      </div>
+      <div class="element">
+        <img src="polytec3d-cyberwoman.jpg" alt="Illustration" width="700" height="700">
+        <div class="caption">
+          <h2>Illustration</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+        </div>
+      </div>
+    </div>
+    <!-- Flèches -->
+    <i id="nav-gauche" class="las la-chevron-left"></i>
+    <i id="nav-droite" class="las la-chevron-right"></i>
+  </div>
+</section>
+<!--======================================================section client=====================================-->
+<section class="demo-2">
+
+  <main>
+    <main>
+      <div class="frame" data-aos="fade-right" data-aos-delay="200">
+        <h1 id="typewriter-title"></h1><hr/>
+        <div class="content content--canvas"></div>
+        <div class="frame">
+          <div class="frame__title-wrap">
+
           </div>
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="test1.html">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="index.html">Nos projet</a></li>
-            <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+        </div>
 
+
+
+
+
+        <div class="frame__title-wrap" data-aos="zoom-in" data-aos-delay="200">
+          <ul>
+            <li>
+             <!-- <img src="AGENIUM-removebg-preview.png" alt="client1">-->
+              <img src="BOURSORAMA-removebg-preview.png" alt="client1">
+            </li>
+            <li>
+              <img src="BUT-removebg-preview.png" alt="client2">
+              <img src="ALBA.jpg" alt="client2">
+            </li>
+            <li>
+              <img src="ENOSIS-removebg-preview.png" alt="client3">
+              <img src="ATLANTIC-removebg-preview.png" alt="client3">
+            </li>
+            <li>
+              <img src="NFINITE-removebg-preview.png" alt="client4">
+            </li>
           </ul>
-          <p>&copy;2023 Donia Laajili | All Rights Reserved</p>
+        </div>
 
 
-        <!--
 
-        <footer class="footer">
-          <div class="footer-text">
-            <p>copyright &copy;2023 by Donia Laajili</p>
-          </div>
-           <div class="footer-iconTop">
-             <a href="#"><i class=" bx bx-up-arrow"><img src="up-arrow-alt-regular-24.png"></i></a>
-           </div>-->
-        </footer>
+    </main>
+  </main>
+</section>
 
-	</body>
+<!--========================================================section contact==========================================-->
+<section class="contact" id="contact">
+
+  <h2 class="heading">Discutons ensemble de <span>votre projet !</span></h2>
+
+  <div class= "con" style="background: rgba(0,0,0,0.77); background-size: cover; height:480px; padding-top:80px;" data-aos="fade-left" data-aos-delay="200">
+
+    <form action="https://formsubmit.co/misaki45621@gmail.com" method="post">
+      <div class="input-box" data-aos="fade-left" data-aos-delay="300">
+        <div class="input-field">
+          <input type="text" placeholder="Full Name" required name="name" id="name">
+          <span class="focus"></span>
+        </div>
+        <div class="input-field" data-aos="fade-right" data-aos-delay="200">
+          <input type="email" placeholder="email adress" required name="email" id="email">
+          <span class ="focus"></span>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="input-field" data-aos="fade-left" data-aos-delay="200">
+          <input type="number" placeholder="Mobile number" required>
+          <span class="focus"></span>
+        </div>
+        <div class="input-field" data-aos="fade-right" data-aos-delay="200">
+          <input type="text" placeholder="email subject" required>
+          <span class ="focus"></span>
+        </div>
+        <div class="textearea-field" data-aos="fade-left" data-aos-delay="200">
+
+          <textarea name="" id="" cols="30" rows="10" placeholder="your message" required name="message" id="message"></textarea>
+          <span class="focus"></span>
+        </div>
+        <div class="btn-box" data-aos="zoom-in" data-aos-delay="200">
+          <button type="submit" class="btn">envoyer</button>
+        </div>
+    </form>
+  </div>
+</section>
+<script src="scroll.js"></script>
+<script src="Main.js"></script>
+
+
+
+<!--===========================================Footer==========================================-->
+<!--
+<footer class="footer">
+  <div class="footer-text">
+    <p>copyright &copy;2023 by Donia Laajili</p>
+  </div><div class="footer-iconTop">
+    <a href="#"><i class=" bx bx-up-arrow"><img src="up-arrow-alt-regular-24.png"></i></a>
+  </div>-->
+<br>
+
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <!--
+  <ul class="social-icon">
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a></li>
+  </ul>-->
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="projet.html">Nos projet</a></li>
+    <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+
+  </ul>
+  <p>&copy;2023 Donia Laajili | All Rights Reserved</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+
+
+<!--========== SCROLL REVEAL ==========-->
+<script src="https://unpkg.com/scrollreveal"></script>
+  <!--<script src="Main.js"></script>-->
+<script src="scroll.js"></script>
+<script src="solu.js"></script>
+<script src="aos.js"></script>
+<script src="aos-animation.js"></script>
+
+<!--========== MAIN JS ==========
+<script src="main.js"></script>-->
+</body>
 </html>
