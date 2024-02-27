@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(197, 193, 193);
+}
+.logo {
+  position: fixed;
+  right: 2.9%;
+  top: 4%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;}
+
+/*menu
+.header {
+  position: fixed;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 3rem;
+
+}
+details {
+  margin: 40px;
+}
+summary {
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding: 12px 10px;
+  width: 23px;
+  height: 17px;
+  background-color: var(--primColor);
+  border: 2px solid var(--secoColor);
+  border-radius: var(--cornerRad);
+  color: var(--secoColor);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
+}
+summary::before,
+summary::after {
+  position: static;
+  top: 0;
+  left: 0;
+}
+summary::before {
+  content: "";
+}
+summary::after {
+  content: "III";
+  letter-spacing: -1px;
+}
+summary:hover {
+  transform: scale(1.1);
+}
+summary::marker {
+  font-size: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .menu {
+  animation-name: menuAnim;
+}
+details[open] summary::before {
+  content: "X";
+}
+details[open] summary::after {
+  content: "";
+}
+.menu {
+  height: 0;
+  width: fit-content;
+  border-radius: var(--cornerRad);
+  background-color: var(--primColor);
+  box-shadow: 0 4px 12px 0 rgb(0, 15, 108);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: closeMenu 300ms ease-in-out forwards;
+  position: absolute;
+}
+.menu a {
+  padding: 12px 24px;
+  margin: 0 16px;
+  color: var(--secoColor);
+  border-bottom: 2px solid rgb(0, 6, 110);
+  text-decoration: none;
+  text-align: center;
+  transition: filter 200ms linear 0s;
+}
+.menu a:nth-of-type(1) {
+  padding-top: 24px;
+}
+.menu a:nth-last-of-type(1) {
+  border-bottom: none;
+}
+.menu a:hover {
+  filter: brightness(200%);
+}
+details::before {
+  color: var(--secoColor);
+  position: absolute;
+  margin-left: 80px;
+  padding: 10px 10px;
+  opacity: 0.4;
+}
+details[open]::before {
+  animation: fadeMe 300ms linear forwards;
+}
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 312px;
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* animation bouton contact
+
+html, body {
+  height: 100%;
+}
+
+wrap{
+  position: fixed;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 70px;
+  height: 70px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #1137e1;
+  background: linear-gradient(90deg, rgb(17, 98, 229) 0%, rgb(1, 26, 175) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  /*margin-right: 90%;*/
+  margin-top: 350%;
+}
+/*
+button::before {
+  content: '';
+  border-radius: 1000px;
+  width: calc(70px + 12px);
+  height: calc(70px + 12px);
+  border: 6px solid #04546c;
+  box-shadow: 0 0 60px rgba(10, 183, 246, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid rgba(0, 0, 0, 0.77);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+
+/* position button*/
+
+.container-btns {
+  width: 900px;
+  float: right;
+}
+.container-btns li {
+  width: 165px;
+  float: left;
+  margin: 10px auto;
+  text-align: center;
+
+}
+/*annimation button*/
+
+.container-btns li a:hover {
+  transition: all 0.3s ease-in-out;
+  color: darkred;
+}
+
+.container-btns li a{
+
+  text-decoration: none;
+  color: darkgray;
+
+}
+
+.logo {
+  position: absolute;
+  right: 2.9%;
+  top: 1.5%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;}
+
+header {
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.title-projet {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  top:40px;
+  font-size: 7rem;
+  text-shadow:0 0 2px #000000,0 0 30px rgba(0, 0, 0, 0.77),5px 9px 5px #333, 0 0 150px rgba(0, 0, 0, 0.77);color:#cccccc;
+
+
+}
+
+.title-projet:first-of-type {    /* For increasing performance
+                       ID/Class should've been used.
+                       For a small demo
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+.title-projet:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.title-projet span:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {opacity:0;}
+  20% {opacity:1;}
+  80% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@keyframes slidein {
+  0% { margin-left:-800px; }
+  20% { margin-left:-800px; }
+  35% { margin-left:0px; }
+  100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+  0% {opacity:0;width:0px;}
+  20% {opacity:1;width:0px;}
+  30% {width:355px;}
+  80% {opacity:1;}
+  100% {opacity:0;width:355px;}
+}
+
+
+.title-projet .p {
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
+
+/*div.title-menu {
+  background-color: rgb(0, 0, 0);
+  z-index: 999;
+  padding: 45px;
+  position: absolute;
+  top: 190px;
+  box-shadow: -12px 12px 3px 2px rgba(0, 0, 0, .2);
+}
+
+header h1{
+  text-align: center;
+  font-size: 75px;
+  background: #cccccc;
+}
+
+header p {
+  font-size: 28px;
+  text-align: center;
+}
+
+header h1, header p, li {
+  font-family: Pristina, cursive;
+}
+
+/* slider */
+
+.slider {
+  overflow: hidden;
+
+}
+
+.slides {
+  display: flex;
+  align-items: center;
+  height: 720px;
+  flex-direction: row;
+  width: calc(500px * 4);
+  animation: glisse 15s infinite ease;
+}
+
+.slide {
+  opacity: 0.5;
+}
+
+@keyframes glisse{
+
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(-500px);
+  }
+
+  66% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
+.section-menu {
+  justify-content: center;
+  transform: translateY(-130px);
+  display: flex;
+  flex-direction: row;
+}
+
+nav.menu {
+  width: calc(500px * 6);
+}
+
+nav.menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav.menu ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all;
+}
+
+nav.menu ul li:hover {
+  transform: scale(0.90);
+  transition: 0.3s all;
+}
+
+nav.menu ul li a {
+  color: rgb(8, 20, 241);
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.nav-item {
+  flex: 1;
+  height: 150px;
+}
+
+.nav-item {
+  flex: 1;
+  height: 150px;
+}
+
+.sandwich {
+  background: url("170104-modelisation-3d.jpg") 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.couscous {
+  background: url("pngtree-d-blue-and-yellow-cubes-3d-background-for-4k-hd-wallpapers-image_2601692.png") 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grillade {
+  background: url("cover-what-3d-modeling.jpg") 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entrè {
+  background: url("craiyon_041806_imaginair__realistic__3d__metaverse__webdesign_futur__men_use_computer.png") 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+

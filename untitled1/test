@@ -1,0 +1,43 @@
+using System;
+using System.Net;
+using System.Net.Mail;
+using System.Text;
+
+class Program
+{
+    static void Main()
+    {
+        // Collectez les données du formulaire (vous pouvez remplacer ces valeurs par celles de votre formulaire)
+        string nom = "Nom de l'utilisateur";
+        string email = "email@example.com";
+        string sujet = "Sujet du message";
+        string message = "Contenu du message de l'utilisateur";
+
+        // Adresse e-mail de l'administrateur
+        string adresseAdmin = "adresse-email-admin@example.com";
+
+        // Configurez les paramètres SMTP (utilisez les paramètres de votre serveur SMTP)
+        SmtpClient smtpClient = new SmtpClient("smtp.example.com");
+        smtpClient.Port = 587;
+        smtpClient.Credentials = new NetworkCredential("votre-email@example.com", "votre-mot-de-passe");
+        smtpClient.EnableSsl = true;
+
+        // Créez le message e-mail
+        MailMessage mailMessage = new MailMessage(email, adresseAdmin);
+        mailMessage.Subject = sujet;
+        mailMessage.Body = message;
+        mailMessage.BodyEncoding = Encoding.UTF8;
+        mailMessage.IsBodyHtml = false; // Si le message est au format texte brut
+
+        try
+        {
+            // Envoyez l'e-mail
+            smtpClient.Send(mailMessage);
+            Console.WriteLine("E-mail envoyé avec succès à l'administrateur.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Erreur lors de l'envoi de l'e-mail : " + ex.Message);
+        }
+    }
+}
